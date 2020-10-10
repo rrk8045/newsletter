@@ -10,7 +10,7 @@ app.use(express.static("public"));
 app.use(bodyparser.urlencoded({extended:true}));
 // get the data
 app.get("/",function(req,res){
-  res.sendFile(__dirname+"/signup.html");
+  res.sendFile(__dirname+"/index.html");
 });
 //post the data
 app.post("/",function(req,res){
